@@ -21,3 +21,9 @@ npm test
 ```sh
 npm run storybook
 ```
+
+## Screenshots
+
+![Show Appointment](./docs/Show.png)
+![Appointment Form](./docs/Form.png)
+![Confirm Cancel](./docs/Confirm.png)
