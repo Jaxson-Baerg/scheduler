@@ -34,7 +34,7 @@ export default function useApplicationData () {
     };
 
     return axios.put(`/api/appointments/${id}`, { interview })
-      .then(dispatch({
+      .then(() => dispatch({
         type: SET_INTERVIEW,
         interview: {
           days: updateSpots(state, appointments),
@@ -55,7 +55,7 @@ export default function useApplicationData () {
     };
 
     return axios.delete(`/api/appointments/${id}`, { interview: null })
-      .then(dispatch({
+      .then(() => dispatch({
           type: SET_INTERVIEW,
           interview: {
             days: updateSpots(state, appointments),
